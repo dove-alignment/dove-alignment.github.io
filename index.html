@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="Evaluating mathematical reasoning of foundation models in visual contexts">
-  <meta name="keywords" content="MathVista, Math Vista">
+        content="Aligning Large Language Models via Joint Preference Optimization ">
+  <meta name="keywords" content="DOVE, Joint Preference Optimization">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title> MathVista: Evaluating Math Reasoning in Visual Contexts</title>
+  <title> Comparing Bad Apples to Good Oranges: Aligning Large Language Models via Joint Preference Optimization</title>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script> -->
@@ -22,7 +22,7 @@
     gtag('config', 'G-PYVRSFMDRL');
   </script> -->
 
-  <link rel="icon" href="./static/images/mathvista.png">
+  <link rel="icon" href="./static/images/dove.png">
 
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
 
@@ -74,32 +74,20 @@
           More Research
         </a>
         <div class="navbar-dropdown">
-          <a class="navbar-item" href="https://chameleon-llm.github.io/">
-            <b>Chameleon</b> <p style="font-size:18px; display: inline; margin-left: 5px;">🔥</p>
+          <a class="navbar-item" href="https://arxiv.org/abs/2308.15812">
+            <b>Peering Through Preferences</b> <p style="font-size:18px; display: inline; margin-left: 5px;">🔥</p>
           </a>
-          <a class="navbar-item" href="https://scienceqa.github.io/">
-            <b>ScienceQA</b> <p style="font-size:18px; display: inline; margin-left: 5px;">🔥</p>
+          <a class="navbar-item" href="https://mathvista.github.io/">
+            <b>MathVista</b> <p style="font-size:18px; display: inline; margin-left: 5px;">🔥</p>
           </a>
-          <a class="navbar-item" href="https://github.com/OpenGVLab/LLaMA-Adapter">
-            <b>LLaMA-Adapter (V2)</b> <p style="font-size:18px; display: inline; margin-left: 5px;">🔥</p>
+          <a class="navbar-item" href="https://video-con.github.io/">
+            <b>VideoCon</b> <p style="font-size:18px; display: inline; margin-left: 5px;">🔥</p>
           </a>
-          <a class="navbar-item" href="https://promptpg.github.io/">
-            PromptPG
+          <a class="navbar-item" href="https://arxiv.org/abs/2403.08199">
+            DSPNs
           </a>
-          <a class="navbar-item" href="https://arxiv.org/abs/2307.10635">
-            SciBench
-          </a>
-          <a class="navbar-item" href="https://arxiv.org/abs/2305.12524">
-            TheoremQA
-          </a>
-          <a class="navbar-item" href="https://lila.apps.allenai.org/">
-            Lila
-          </a>
-          <a class="navbar-item" href="https://iconqa.github.io/">
-            IconQA
-          </a>
-          <a class="navbar-item" href="https://lupantech.github.io/inter-gps/">
-            Inter-GPS
+          <a class="navbar-item" href="https://arxiv.org/abs/2401.06692">
+            Label-Efficient SFT 
           </a>
         </div>
       </div>
@@ -115,50 +103,36 @@
       <div class="columns is-centered">
         <div class="column has-text-centered">
           <h1 class="title is-1 publication-title is-bold">
-            <img src="static/images/mathvista.png" style="width:1em;vertical-align: middle" alt="Logo"/>
-            <span class="mathvista" style="vertical-align: middle">MathVista</span>
+            <img src="static/images/dove.png" style="width:1em;vertical-align: middle" alt="Logo"/>
+            <span class="dove" style="vertical-align: middle">Comparing Bad Apples to Good Oranges</span>
             </h1>
           <h2 class="subtitle is-3 publication-subtitle">
-            Evaluating Math Reasoning in Visual Contexts
+            Aligning Large Language Models via Joint Preference Optimization
             <!-- <br> -->
             <!-- with GPT-4V, Bard, and Other Large Multimodal Models -->
           </h2>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <a href="https://lupantech.github.io/">Pan Lu</a><sup style="color:#6fbf73;">1</sup>,</span>
-            <span class="author-block">
               <a href="https://sites.google.com/view/hbansal">Hritik Bansal</a><sup style="color:#6fbf73;">1</sup>,</span>
             <span class="author-block">
-              <a href="https://tonyxia2001.github.io/">Tony Xia</a><sup style="color:#6fbf73;">1</sup>,
+              <a href="https://asuvarna31.github.io/">Ashima Suvarna</a><sup style="color:#6fbf73;">1</sup>,</span>
+            <span class="author-block">
+              <a href="https://sites.google.com/view/gbhatt/">Gantavya Bhatt</a><sup style="color:#ed4b82;">1</sup>,
             </span>
             <span class="author-block">
-              <a href="https://liujch1998.github.io/">Jiacheng Liu</a><sup style="color:#ed4b82">2</sup>,
-            </span>
-            <span class="author-block">
-              <a href="https://chunyuan.li/">Chunyuan Li</a><sup style="color:#ffac33">3</sup>,
-            </span>
-            <span class="author-block">
-              <a href="https://homes.cs.washington.edu/~hannaneh/">Hannaneh Hajishirzi</a><sup style="color:#ed4b82">2</sup>,
-            </span>
-            <span class="author-block">
-              <a href="https://sites.google.com/site/hcheng2site/Home">Hao Cheng</a><sup style="color:#ffac33">3</sup>,
+              <a href="https://vnpeng.net/">Nanyun Peng</a><sup style="color:#6fbf73;">2</sup>,
             </span>
             <span class="author-block">
               <a href="http://web.cs.ucla.edu/~kwchang/">Kai-Wei Chang</a><sup style="color:#6fbf73;">1</sup>,
             </span>
             <span class="author-block">
-              <a href="https://www.microsoft.com/en-us/research/people/mgalley/?from=https://research.microsoft.com/~mgalley&type=exact">Michel Galley</a><sup style="color:#ffac33">3</sup>,
-            </span>
-            <span class="author-block">
-              <a href="https://www.microsoft.com/en-us/research/people/jfgao/">Jianfeng Gao</a><sup style="color:#ffac33">3</sup>
+              <a href="https://aditya-grover.github.io/">Aditya Grover</a><sup style="color:#6fbf73;">3</sup>
             </span>
           </div>
 
           <div class="is-size-5 publication-authors">
             <span class="author-block"><sup style="color:#6fbf73;">1</sup>University of California, Los Angeles,</span><br>
-            <span class="author-block"><sup style="color:#ed4b82">2</sup>University of Washington,</span>
-            <span class="author-block"><sup style="color:#ffac33">3</sup>Microsoft Research</span><br>
-            <span class="paper-block"><b style="color:#f41c1c">ICLR 2024 Oral</b> (85 in 7304, 1.2%)</span>
+            <span class="author-block"><sup style="color:#ed4b82">2</sup>University of Washington</span>
           </div>
         
           <!-- <section> -->
@@ -180,7 +154,7 @@
               <!-- PDF Link. -->
               <span class="link-block">
                 <!-- @PAN TODO: change links -->
-                <a href="https://arxiv.org/pdf/2310.02255.pdf"
+                <a href="https://arxiv.org/abs/2404.00530.pdf"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
@@ -189,7 +163,7 @@
                 </a>
               </span>
               <span class="link-block">
-                <a href="https://arxiv.org/abs/2310.02255"
+                <a href="https://arxiv.org/abs/2404.00530"
                    class="external-link button is-normal is-rounded is-dark">
                 <!-- <a href="https://lupantech.github.io/papers/arxiv23_mathvista.pdf"
                    class="external-link button is-normal is-rounded is-dark"> -->
@@ -211,7 +185,7 @@
               </span> -->
               <!-- Code Link. -->
               <span class="link-block">
-                <a href="https://github.com/lupantech/MathVista"
+                <a href="https://github.com/Hritikbansal/dove"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-github"></i>
@@ -221,7 +195,7 @@
               </span>
               <!-- Dataset Link. -->
               <span class="link-block">
-                <a href="https://huggingface.co/datasets/AI4Math/MathVista"
+                <a href="https://huggingface.co/datasets/jointpreferences/sft_and_pref_data/tree/main/data"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <!-- <i class="far fa-images"></i> -->
@@ -233,16 +207,16 @@
               </span>
               <!-- Visualization Link. -->
               <span class="link-block">
-                <a href="https://mathvista.github.io/#visualization"
+                <a href="https://huggingface.co/jointpreferences"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <p style="font-size:18px">🔮</p>
                   </span>
-                  <span>Visualize</span>
+                  <span>Checkpoints</span>
                 </a>
               </span>
               <!-- Leaderboard Link. -->
-              <span class="link-block">
+              <!-- <span class="link-block">
                 <a href="https://mathvista.github.io/#leaderboard"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
@@ -250,10 +224,10 @@
                   </span>
                   <span>Leaderboard</span>
                 </a>
-              </span>
+              </span> -->
               <!-- Twitter Link. -->
               <span class="link-block">
-                <a href="https://twitter.com/lupantech/status/1717313355780964608"
+                <a href="https://x.com/hbXNov/status/1775208088146251796?s=20"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <!-- <i class="far fa-images"></i> -->
