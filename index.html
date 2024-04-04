@@ -75,13 +75,19 @@
         </a>
         <div class="navbar-dropdown">
           <a class="navbar-item" href="https://arxiv.org/abs/2308.15812">
-            <b>Peering Through Preferences</b> <p style="font-size:18px; display: inline; margin-left: 5px;">🔥</p>
+            Peering Through Preferences
+          </a>
+          <a class="navbar-item" href="https://visit-bench.github.io/">
+            Visit-Bench
+          </a>
+          <a class="navbar-item" href="https://con-textual.github.io/">
+            Contextual
           </a>
           <a class="navbar-item" href="https://mathvista.github.io/">
-            <b>MathVista</b> <p style="font-size:18px; display: inline; margin-left: 5px;">🔥</p>
+            MathVista
           </a>
           <a class="navbar-item" href="https://video-con.github.io/">
-            <b>VideoCon</b> <p style="font-size:18px; display: inline; margin-left: 5px;">🔥</p>
+            VideoCon
           </a>
           <a class="navbar-item" href="https://arxiv.org/abs/2403.08199">
             DSPNs
@@ -113,11 +119,11 @@
           </h2>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <a href="https://sites.google.com/view/hbansal">Hritik Bansal</a><sup style="color:#6fbf73;">1</sup>,</span>
+              <a href="https://sites.google.com/view/hbansal">Hritik Bansal*</a><sup style="color:#6fbf73;">1</sup>,</span>
             <span class="author-block">
-              <a href="https://asuvarna31.github.io/">Ashima Suvarna</a><sup style="color:#6fbf73;">1</sup>,</span>
+              <a href="https://asuvarna31.github.io/">Ashima Suvarna*</a><sup style="color:#6fbf73;">1</sup>,</span>
             <span class="author-block">
-              <a href="https://sites.google.com/view/gbhatt/">Gantavya Bhatt</a><sup style="color:#ed4b82;">1</sup>,
+              <a href="https://sites.google.com/view/gbhatt/">Gantavya Bhatt*</a><sup style="color:#ed4b82;">1</sup>,
             </span>
             <span class="author-block">
               <a href="https://vnpeng.net/">Nanyun Peng</a><sup style="color:#6fbf73;">2</sup>,
@@ -289,7 +295,7 @@
     <!-- Abstract. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Introduction</h2>
+        <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
           Large Language Model (LLM) alignment hinges on the quality of preferences acquired from human or AI annotators. Among the various preference acquisition protocols, the ranking-based approach is the most widely used paradigm for aligning LLMs. Specifically, in this approach the annotator has to compare a pair of responses conditioned on a fixed context. However, such conditional rankings often fail to capture the complex and multidimensional aspects of human preferences. 
@@ -305,11 +311,44 @@
 </section>
 
 <!-- DATASET SECTION -->
+<section class="hero is-light is-small">
+  <div class="hero-body has-text-centered">
+    <h1 class="title is-1 mathvista">Interplay between Feedback Protocols</h1>
+  </div>
+</section>
 
+<section class="section">
+  <div class="container">
+
+    <div class="columns is-centered m-6">
+      <div class="column is-full has-text-centered content">
+        <h2 class="title is-3">Diverse Reasoning of Human Preferences</h2>
+        <!-- <p>One example for each reasoning skill required in <span class="mathvista">MathVista</span></p> -->
+        <div id="results-carousel" class="carousel results-carousel">
+          <div class="box m-5">
+            <div class="content has-text-centered">
+              <img src="static/images/example_1.png" alt="grade-lv" width="60%"/>
+              </div>
+          </div>
+          <div class="box m-5">
+            <div class="content has-text-centered">
+              <img src="static/images/example_2.png" alt="grade-lv" width="70%"/>
+              
+              <div class="box m-5">
+                <div class="content has-text-centered">
+                  <img src="static/images/example_3.png" alt="grade-lv" width="70%"/>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
 <!-- RESULTS SECTION -->
 <section class="hero is-light is-small">
   <div class="hero-body has-text-centered">
-    <h1 class="title is-1 mathvista">Experiment Results</h1>
+    <h1 class="title is-1 mathvista">LLM Alignment</h1>
   </div>
 </section>
 
@@ -331,8 +370,15 @@
             <div class="content has-text-centered">
               <img src="static/images/ahh_figure_win_rate.png" alt="grade-lv" width="70%"/>
               <p>
-                Results for aligning LLMs with the <b>DOVE</b> preference optimization objective. We compare the win-rate against the gold responses of the supervised finetuned (SFT), DPO-aligned and DOVE-aligned LLM on the Anthropic-Helpfulness dataset. In our experiments, we utilize ChatGPT to compare the model responses with the gold responses. We generate model responses for three sampling temperatures. The results are averaged over three runs of the preference optimization objectives.</p>
+                Results for aligning LLMs with the <b>DOVE</b> preference optimization objective. We compare the win-rate against the gold responses of the supervised finetuned (SFT), DPO-aligned and DOVE-aligned LLM on the Anthropic-Helpful dataset. In our experiments, we utilize ChatGPT to compare the model responses with the gold responses. We generate model responses for three sampling temperatures. The results are averaged over three runs of the preference optimization objectives.</p>
               </p>
+              <div class="box m-5">
+                <div class="content has-text-centered">
+                  <img src="static/images/ablation.png" alt="grade-lv" width="70%"/>
+                  <p>
+                    Win-rate against the gold response in the TL;DR and Anthropic-Helpful datasets averaged over three sampling temperatures. We study the impact of the joint preferences over non-identical instructions using DOVE.</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
